@@ -56,7 +56,6 @@ def pre_process(df):
         tokens = nltk.word_tokenize(utterance)
         # lower each token and remove stop words
         tokens = [token.lower() for token in tokens if token.lower() not in stop_words]
-        # add to words list
         # add to documents in the corpus
         documents.append((tokens, label))
         # add to classes list
